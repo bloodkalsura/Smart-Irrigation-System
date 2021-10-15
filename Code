@@ -186,3 +186,13 @@ void serial_transmit(unsigned char *srstr)	//serial  transmit
 		srstr++;
 		}
 	}
+	
+	group("some_Group_Name", () { 
+   test("test_name_1", () { 
+      expect(actual, equals(exptected)); 
+   });  
+   test("test_name_2", () { 
+      expect(actual, equals(expected));
+      expect(actual, equals(expected));
+   }); 
+}) 
